@@ -21,6 +21,7 @@ describe("CourseList component tests", () => {
 
     expect(wrapper.find("thead").children()).toHaveLength(2);
     wrapper.find("thead").forEach((node) => {
+      // eslint-disable-next-line jest/valid-expect
       expect(node.equals(<CourseListRow textFirstCell="Course name" textSecondCell="Credit" isHeader={true} />));
     });
 
